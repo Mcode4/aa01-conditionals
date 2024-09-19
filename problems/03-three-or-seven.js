@@ -5,16 +5,28 @@ return the original number.
 */
 
 // Your code here 
+function threeOrSeven(n){
+    if (n === 0){
+        return 0
+    } else if (n % 7 === 0 && n % 3 === 0){
+        return 21
+    } else if (n % 7 === 0){
+        return 7
+    } else if (n % 3 === 0){
+        return 3
+    }
+    else return n
+}
 
-// console.log(threeOrSeven(3));   // => 3
-// console.log(threeOrSeven(15));  // => 3
-// console.log(threeOrSeven(7));   // => 7
-// console.log(threeOrSeven(14));  // => 7
-// console.log(threeOrSeven(21));  // => 21
-// console.log(threeOrSeven(-42)); // => 21
-// console.log(threeOrSeven(100)); // => 100
-// console.log(threeOrSeven(0));   // => 0
-// console.log(threeOrSeven(-20)); // => -20
+console.log(threeOrSeven(3));   // => 3
+console.log(threeOrSeven(15));  // => 3
+console.log(threeOrSeven(7));   // => 7
+console.log(threeOrSeven(14));  // => 7
+console.log(threeOrSeven(21));  // => 21
+console.log(threeOrSeven(-42)); // => 21
+console.log(threeOrSeven(100)); // => 100
+console.log(threeOrSeven(0));   // => 0
+console.log(threeOrSeven(-20)); // => -20
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
 module.exports = threeOrSeven;

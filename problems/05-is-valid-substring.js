@@ -6,6 +6,15 @@ return "INVALID".
 */
 
 // Your code here 
+function isValidSubStr(str, str2){
+    let lower = str.toLowerCase()
+    let lower2 = str2.toLowerCase()
+
+    if(lower.includes(lower2)){
+        return 'VALID'
+    } else return 'INVALID'
+    
+}
 
 // console.log(isValidSubStr("JOY", "joy"));                     // => 'VALID'
 // console.log(isValidSubStr("The cat jumped!", "he cat jump")); // => 'VALID'
